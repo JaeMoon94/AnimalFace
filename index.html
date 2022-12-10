@@ -376,28 +376,28 @@
                 var labelTitle;
                 switch (prediction[i].className) {
                     case "dog":
-                        labelTitle = "강아지상"
+                        labelTitle = "DOG"
                         break;
                     case "cat":
-                        labelTitle = "고양이상"
+                        labelTitle = "CAT"
                         break;
                     case "rabbit":
-                        labelTitle = "토끼상"
+                        labelTitle = "RABBIT"
                         break;
                     case "dinosaur":
-                        labelTitle = "공룡상"
+                        labelTitle = "DINOSAUR"
                         break;
                     case "bear":
-                        labelTitle = "곰상"
+                        labelTitle = "BEAR"
                         break;
                     case "deer":
-                        labelTitle = "사슴상"
+                        labelTitle = "DOE"
                         break;
                     case "fox":
-                        labelTitle = "여우상"
+                        labelTitle = "FOX"
                         break;
                     default:
-                        labelTitle = "알수없음"
+                        labelTitle = "UNKNOWN"
                 }
                 var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
                 var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
